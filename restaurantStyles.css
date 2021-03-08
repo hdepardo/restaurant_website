@@ -1,0 +1,67 @@
+body 
+{
+    padding-bottom: 75px;
+    padding-top: 170px;
+}
+
+header
+{
+    background-color: deepskyblue;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    
+    
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    
+    z-index: 1;
+
+}
+
+footer
+{
+    background-color: deepskyblue;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+}
+
+a
+{
+}
+
+a:link
+{
+    color: black;
+}
+
+a:visited
+{
+    color: green;
+}
+
+a:hover
+{
+    color: lightcoral;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a:active
+{
+    color: lightcoral;
+    background-color: lightcoral;
+}
+
+.nav
+{
+    background-color: deepskyblue;
+    border-bottom-color: lightcoral;
+    font-size: 20px; 
+}

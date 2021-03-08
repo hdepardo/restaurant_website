@@ -1,0 +1,227 @@
+<!DOCTYPE html> 
+<html>
+
+    <head>
+        <title>Contact Us</title>
+        
+        <!-- links JavaScript for input validation -->
+        <script type="text/javascript" src="contactValidation.js"></script>
+        
+        <!-- links external css file --> 
+        <link rel="stylesheet" type="text/css" href="restaurantStyles.css">
+        
+        <!-- Display disabled JavaScript warning -->
+        <noscript>
+            <h3>
+                JavaScript is not enabled! For best experience please enable in browser settings.
+            </h3>
+        </noscript>
+        
+        <!-- Bootstrap -->
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+    </head>
+    
+    <style>
+    
+        /* All labels are bolded in contact form */
+        .col-form-label
+        {
+            font-weight: bold;
+            text-align: right;
+        }
+        
+        /* form has padding on top and bottom so there's breathing room for the header and footer */
+        form
+        {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        
+    </style>
+
+    
+    <body style="background-color: lightcoral">
+        
+        <!-- More Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        
+        <header>
+            <h1>Restaurant Name</h1>
+            
+            <!-- New location header announcement -->
+            <p>
+                Check out our new location opening at Federal Hill! 
+            </p>
+            
+            <!-- Nav Bar -->
+             <ul class="nav nav-tab justify-content-center nav-fill">
+                
+                <!-- Home button -->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" type="_self">&#8962;</a>
+                </li>
+                 
+                 <!-- Menu button --> 
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html" type="_self">Menu</a>
+                </li>
+                 
+                <!-- Contact button -->
+                <li class="nav-item">
+                    <a class="nav-link active" href="contact_us.html" type="_self" style="background-color: lightcoral">Contact Us</a>
+               </li>
+            </ul>
+            
+        </header>
+            
+        <!-- Contact Form --> 
+        <form name="contactForm" class="container" onsubmit="return validateAllItems();">
+
+             <!-- Name Input --> 
+            <fieldset class="form-group row">
+                
+                <!-- Name label --> 
+                <label class="col-4 col-form-label" for="nameInput">Name:</label>
+                
+                <!-- Name input field --> 
+                <article class="col-5">
+                    <input type="text" class="form-control" id="nameInput"/>
+                </article>
+                
+            </fieldset>
+            
+            <!-- Email Input --> 
+            <fieldset class="form-group row">
+                
+                <!-- Email label -->
+                <label class="col-4 col-form-label" for="emailInput">Email:</label>
+                
+                <!-- Email input field -->
+                <article class="col-5">
+                    <input type="email" class="form-control" id="emailInput"/>
+                </article>  
+                
+            </fieldset>
+            
+            <!-- Phone Number Input --> 
+            <fieldset class="form-group row">
+                
+                <!-- Phone Number label --> 
+                <label class="col-4 col-form-label" for="phoneInput">Phone Number:</label>
+                
+                <!-- Phone number input field -->
+                <article class="col-5">
+                    <input type="number" class="form-control" id="phoneInput"/>
+                </article>
+                
+            </fieldset>
+            
+            <!-- Reason for Inquiry Input --> 
+            <fieldset class="form-group row">
+                
+                <!-- Reason for Inquiry label --> 
+                <label class="col-4 col-form-label" for="reasonDropDown">Reason for Inquiry: </label>
+                
+                <!-- Reason options drop down -->
+                <article class="col-5">
+                    <select class="form-control"name="reasonDropDown">
+                        
+                        <!-- Catering option -->
+                        <option value="catering">Catering</option>
+                        
+                        <!-- Private Party option -->
+                        <option value="privateParty">Private Party</option>
+                        
+                        <!-- Feedback option --> 
+                        <option value="feedback">Feedback</option>
+                        
+                        <!-- other option -->
+                        <option value="other">Other</option>
+                    </select>
+                </article>
+            </fieldset>
+            
+            <!-- Additional Information Input --> 
+            <fieldset class="form-group row">
+                
+                <!-- Additional information label --> 
+                <label class="col-4 col-form-label" for="additionalInformation">Additional Information:
+                </label>
+                
+                <!-- Additional information text area --> 
+                <article class="col-5">  
+                    <textarea class="form-control" name="additionalInformation">
+                    </textarea>
+                </article>
+            
+            </fieldset>
+            
+            <!-- Previous Visit Input -->
+            <fieldset class="form-group row">
+                
+                <!-- Previous Visit label --> 
+                <label class="col-4 col-form-label" for="previousVisit">
+                    Have you been to the restaurant?  
+                </label>
+                
+                <!-- Previous visit options --> 
+                <article class="col-5 form-inline">
+                    
+                    <!-- No option --> 
+                    <input class="col-xs-1 form-control" type="radio" name="previousVisit" value="no" checked/> <pre> </pre> No <pre> </pre>
+                                <!-- <pre> used for spacing/better visibility -->
+                    <!-- Yes option -->
+                    <input class="col-xs-1 form-control" type="radio" name="previousVisit" value="yes" /> <pre> </pre> Yes
+                </article>
+            </fieldset>
+            
+            <!-- Availability Input --> 
+            <fieldset class="form-group flex-wrap row">
+                
+                <!-- Availibilty label --> 
+                <label class="col-sm-4 col-form-label" for="availability">
+                    Best days to contact you: 
+                </label>
+                
+                <!-- Availability options -->
+                <article class="col-6 form-inline">
+                    
+                    <!-- Monday -->
+                    <input class="form-control" type="checkbox" name="availability" value="monday" /> <pre> </pre> M <pre> </pre>   
+                
+                    <!-- Tuesday -->
+                    <input class="form-control" type="checkbox" name="availability" value="tuesday" /><pre> </pre> T <pre> </pre>   
+                
+                    <!-- Wednesday --> 
+                    <input class="form-control" type="checkbox" name="availability" value="wednesday" /><pre> </pre> W <pre> </pre>   
+                
+                    <!-- Thursday --> 
+                    <input class="form-control" type="checkbox" name="availability" value="thursday" /><pre> </pre> Th  <pre> </pre>    
+                
+                    <!-- Friday --> 
+                    <input class="form-control" type="checkbox" name="availability" value="friday" /><pre> </pre> F  
+                </article>
+            </fieldset>
+            
+            <!-- Submit Button -->
+            <section class="form-group row">
+                <input class="col-lg-1" type="submit" name="sendButton" value="Send Request"/> 
+            </section>
+
+        </form>
+        
+        
+       <footer>
+            <p>
+                Street, City, State, Zipcode <br />
+                555-5555
+            </p>
+        </footer>
+        
+    </body>
+    
+    
+</html>

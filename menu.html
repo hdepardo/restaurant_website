@@ -1,0 +1,200 @@
+<DOCTYPE! hmtl>
+
+<html> 
+
+    <head>
+        <title>Menu</title>
+        
+        <link rel="stylesheet" type="text/css" href="restaurantStyles.css">
+        
+        
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+        
+        <style>
+    
+            .itemName
+            {
+                font-weight: bold;
+                text-decoration: underline;
+            }
+            
+            .itemPrice
+            {
+                font-style: italic;
+                color: green;
+            }
+            
+            .col-md
+            {
+                margin: 0px 20px 20px 20px;
+                border: solid;
+                background-color: coral;
+            }
+            
+            table
+            {
+                text-align: left;
+                margin-bottom: 30px;
+                border-color: lightcoral;
+            }
+            .alternatingRow
+            {
+                background-color: coral;
+            }
+
+        </style>
+    </head>
+    
+  
+    
+    <body style="background-color: lightcoral">
+        
+        <!-- More Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        
+        <header>
+            <h1>Restaurant Name</h1>
+            
+            <p>
+                Check out our new location opening at Federal Hill! 
+            </p>
+            
+            <!-- Nav Bar --> 
+            <ul class="nav nav-bar justify-content-center nav-fill">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" type="_self">&#8962;</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="menu.html" type="_self" style="background-color: lightcoral">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact_us.html" type="_self">Contact Us</a>
+               </li>
+            </ul>
+            
+        </header>
+        
+        <!-- Menu Items Table -->
+        <div class="container">
+            
+            <!-- Entrees section, made up of two rows of menu items. -->
+            <h2 id="entreeHeader" style="text-align: center">Entrees</h2>
+        
+            <!-- Row 1 -->
+            <div class="row">
+                
+                <div class="col-md" >
+                    <h5 class="itemName">Food Item</h5>
+                    This is the food
+                    description. It's tasty! <br/>
+                    <span class="itemPrice">$5.99</span>
+                </div>
+                
+                <div class="col-md" >
+                    <h5 class="itemName">Food Item</h5>
+                    This is the food
+                    description. It's tasty! <br/>
+                    <span class="itemPrice">$5.99</span>
+                </div>
+                
+                <div class="col-md" >
+                    <h5 class="itemName">Food Item</h5>
+                    This is the food
+                    description. It's tasty! <br/>
+                    <span class="itemPrice">$5.99</span>
+                </div>
+                
+            </div>
+            
+            <!-- Row 2 -->
+            <div class="row">
+                
+                <div class="col-md" >
+                    <h5 class="itemName">Food Item</h5>
+                    This is the food
+                    description. It's tasty! <br/>
+                    <span class="itemPrice">$5.99</span>
+                </div>
+                
+                <div class="col-md" >
+                    <h5 class="itemName">Food Item</h5>
+                    This is the food
+                    description. It's tasty! <br/>
+                    <span class="itemPrice">$5.99</span>
+                </div>
+                
+                <div class="col-md" >
+                    <h5 class="itemName">Food Item</h5>
+                    This is the food
+                    description. It's tasty! <br/>
+                    <span class="itemPrice">$5.99</span>
+                </div>
+            
+            </div>
+            
+            <!--Beverages -->
+            <div class="row">
+                
+            </div>
+            
+            <!-- Beverages Table -->
+            <table class="table">
+                
+                <!-- Header -->
+                <tr scope="row">
+                    <th colspan="2">Beverages</th>
+                </tr>
+                
+                <!-- Coca-Cola -->
+                <tr class="alternatingRow" scope="row">
+                    <td>Coca-Cola</td>
+                    <td class="itemPrice">$2.99</td>
+                </tr>
+
+                <!-- Diet Coke -->
+                <tr scope="row">
+                    <td>Diet Coke</td>
+                    <td class="itemPrice">$2.99</td>
+                </tr>
+
+                <!-- Dr. Pepper -->
+                <tr class="alternatingRow" scope="row">
+                    <td>Dr. Pepper</td>
+                    <td class="itemPrice ">$2.99</td>
+                </tr>
+
+                <!-- Lemonade -->
+                <tr scope="row">
+                    <td>Lemonade</td>
+                    <td class="itemPrice">$2.99</td>
+                </tr>
+
+                <!-- Bottled Water -->
+                <tr class="alternatingRow" scope="row">
+                    <td>Water</td>
+                    <td class="itemPrice">$2.19</td>
+                </tr>
+                
+                <!-- SG Special Brew --> 
+                <tr scope="row">
+                    <td>SG Special Brew</td>
+                    <td class="itemPrice">$3.99</td>
+                </tr>
+               
+            </table>
+        
+        </div>
+        
+        
+        <footer>
+            <p>
+                Street, City, State, Zipcode <br/> 555-5555
+            </p>
+        </footer>
+        
+    </body>
+
+</html>
